@@ -1,3 +1,12 @@
+@font-face {
+    font-family: "Garamond";
+    src: url(../fonts/EBGaramond-Regular.ttf);
+}
+
+body{
+    font-family: "Garamond", sans-serif;
+
+}
 
 
 /******************************** SIDE MENU *******************************************/
@@ -9,7 +18,7 @@
     height: 100%;
     transition: all 0.4s ease 0s;
     transform: translateX(250px);
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.5);
 }
 
 .sidebar-nav {
@@ -25,13 +34,14 @@
     display: block;
     text-decoration: none;
     color: white;
+    font-weight: bold;
     padding: 15px;
 }
 
 .sidebar-nav li a:hover {
     text-decoration: none;
-    color: rgb(255, 194, 204);
-    background: rgba(255, 194, 204, 0.2);
+    color: white;
+    background: rgba(224, 177, 126, 0.5);
 }
 
 .sidebar-nav li a:active,
@@ -50,11 +60,11 @@
 }
 
 .sidebar-nav > .sidebar-brand a {
-    color: pink;
+    color: #274426;
 }
 
 .sidebar-nav > .sidebar-brand a:hover {
-    color: pink;
+    color: #274426;
     background: none;
 }
 
@@ -63,7 +73,6 @@
     width: 250px;
     transition: all 0.4s ease 0s;
 }
-
 
 
 /**************************** MENU BURGER ******************************/
@@ -88,6 +97,7 @@
 .menu-toggle:hover {
     background: #343a40;
 }
+
 .scroll-to-top {
     position: fixed;
     right: 15px;
@@ -111,4 +121,134 @@
 
 .scroll-to-top i {
     font-weight: 800;
+}
+
+a {
+    text-decoration: none;
+    color: #E0B17EFF;
+}
+
+.akashiques-medium-guidance-energeticienne-mobilText, #akashiques-medium-guidance-energeticienne-footer {
+    background-color: #274426;
+    text-align: center;
+    color: #E0B17EFF;
+    font-weight: bold;
+    padding: 5px;
+
+}
+
+.akashiques-medium-guidance-energeticienne-mobilText h1, .akashiques-medium-guidance-energeticienne-mobilText h2 {
+    margin-top: 0px;
+    font-size: 15px;
+}
+
+.akashiques-medium-guidance-energeticienne-mobilText a, main a  {
+    text-decoration: underline #E0B17EFF;
+}
+
+
+#akashiques-medium-guidance-energeticienne-article-pourquoi li {
+    margin: 10px 0px;
+}
+.akashiques-medium-guidance-energeticienne-navDesktop {
+    display: none;
+}
+
+.akashiques-medium-guidance-energeticienne-navDesktop ul {
+    list-style: none;
+    padding: 0;
+}
+
+main {
+    background-color: #ffffff;
+}
+
+.main-container {
+    padding: 10px;
+    margin-bottom: 15px;
+}
+
+main a {
+    font-weight: bold;
+
+}
+main span {
+    font-weight: bold;
+}
+.akashiques-medium-guidance-energeticienne-section{
+    box-shadow: rgba(0, 0, 0, .35) 0 5px 15px;
+    border-radius: 5px;
+}
+
+.akashiques-medium-guidance-energeticienne-section h1{
+    background-color: #274426;
+    color: #E0B17EFF;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bolder;
+
+}
+.akashiques-medium-guidance-energeticienne-section article
+ {
+    padding: 10px;
+    font-size: 18px;
+    line-height: 28px;
+}
+section h2 {
+    text-align: center;
+}
+.akashiques-medium-guidance-energeticienne-section article h2 {
+    font-size: 20px;
+    background-color: #E0B17EFF;
+    padding: 3px;
+    font-weight: bold;
+    color:#274426;
+    border-radius: 5px;
+}
+
+
+
+blockquote {
+    text-align: center;
+    font-size: 15px;
+}
+.tarifPrestation {
+    font-size: 15px;
+    font-weight:bold;
+
+}
+.tarifPrestation p {
+    margin: 0px;
+}
+.conseil  {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 20px;
+    font-weight: normal;
+}
+
+#akashiques-medium-guidance-energeticienne-footer {
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    padding: 10px;
+}
+
+@media screen and (min-width:768px) {
+    .akashiques-medium-guidance-energeticienne-mobilText {
+        display: none;
+    }
+    main {
+        background-image: url("../images/background-angel.jpg");
+        background-size: contain;
+    }
+
+    .main-container {
+        padding-left: 120px;
+        padding-right: 120px;
+    }
+
 }
