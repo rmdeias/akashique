@@ -13,7 +13,7 @@ if (isset($_POST["email"])  && isset($_POST["email"]) && filter_var($_POST["emai
 
     // Close the CSV file
     fclose($fp);
-    
+
     // Email configuration
     $today = date("Ymd");
     $to = 'rmdeias@gmail.com';
