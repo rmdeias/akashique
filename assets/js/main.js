@@ -12,7 +12,8 @@ function scrollFunction() {
 
         nav.classList.remove("sticky");
 
-        logo.style.display = "flex";
+        logo.style.display = "block";
+
         main[0].classList.remove("marginTopMain");
 
         if (document.body.scrollTop >= logo.offsetHeight || document.documentElement.scrollTop >= logo.offsetHeight ) {

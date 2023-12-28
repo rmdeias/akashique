@@ -18,12 +18,12 @@ body{
     height: 100%;
     transition: all 0.4s ease 0s;
     transform: translateX(250px);
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(39, 68, 38, 0.7);
 }
 
 .sidebar-nav {
     position: absolute;
-    top: 0;
+    top: 69px;
     width: 250px;
     margin: 0;
     padding: 0;
@@ -84,7 +84,7 @@ body{
     height: 50px;
     text-align: center;
     color: #fff;
-    background: rgba(52, 58, 64, 0.5);
+    background: rgba(224, 177, 126, 0.7);
     line-height: 50px;
     z-index: 999;
     border-radius: 10px;
@@ -95,7 +95,8 @@ body{
 }
 
 .menu-toggle:hover {
-    background: #343a40;
+
+    background: rgba(224, 177, 126, 0.5);
 }
 
 .scroll-to-top {
@@ -107,7 +108,8 @@ body{
     height: 50px;
     text-align: center;
     color: white;
-    background: rgba(52, 58, 64, 0.5);
+        background: rgba(224, 177, 126, 0.7);
+
     line-height: 45px;
 }
 
@@ -116,6 +118,7 @@ body{
 }
 
 .scroll-to-top:hover {
+
     background: #343a40;
 }
 
@@ -172,7 +175,7 @@ main span {
     font-weight: bold;
 }
 .akashiques-medium-guidance-energeticienne-section{
-    box-shadow: rgba(0, 0, 0, .35) 0 5px 15px;
+    box-shadow: rgba(224, 177, 126, 0.5) 0 5px 15px;
     border-radius: 5px;
     margin-top: 50px;
 }
@@ -241,6 +244,10 @@ blockquote {
         flex-direction: row;
         justify-content: space-around;
     }
+    .logoimg{
+
+        max-height:400px;
+    }
 }
 @media screen and (min-width:768px) {
 
@@ -261,7 +268,9 @@ blockquote {
 }
 
 @media screen and (min-width:1025px) {
-
+.menu-toggle{
+    display: none;
+}
 
     .sticky{
         position: fixed;
@@ -293,6 +302,7 @@ blockquote {
     }
 
     #akashiques-medium-guidance-energeticienne-navDesktop li {
+        text-transform: uppercase;
         flex-basis: 16%;
         text-align: center;
         padding: 8px;
