@@ -1,6 +1,6 @@
 
 var logo = document.getElementById("akashiques-medium-guidance-energeticienne-banner");
-var nav = document.getElementById("akashiques-medium-guidance-energeticienne-navDesktop");
+var nav = document.getElementById("akashiques-medium-guidance-energeticienne-navDesktop1");
 var main = document.getElementsByTagName("main");
 const isFirefox = typeof InstallTrigger !== 'undefined';
 
@@ -38,7 +38,7 @@ $(document).ready( function () {
 
 //for hide or show #akashiques-medium-guidance-energeticienne-navDesktop2
 $("#prestationNav").mouseover(function() {
-        $("#akashiques-medium-guidance-energeticienne-navDesktop2" ).css("display" , "block" );
+      $("#akashiques-medium-guidance-energeticienne-navDesktop2" ).css({"display" : "block" });
     }
 );
 $(".navLinks").mouseover(function() {
