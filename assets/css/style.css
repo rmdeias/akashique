@@ -21,9 +21,14 @@ body {
     background: rgba(39, 68, 38, 0.7);
 }
 
+#sidebar-wrapper ul {
+    list-style: none;
+    padding: 5px;
+}
+
 .sidebar-nav {
     position: absolute;
-    top: 69px;
+    top: 60px;
     width: 250px;
     margin: 0;
     padding: 0;
@@ -35,7 +40,8 @@ body {
     text-decoration: none;
     color: white;
     font-weight: bold;
-    padding: 15px;
+    padding: 10px 5px;
+    border-radius: 5px;
 }
 
 .sidebar-nav li a:hover {
@@ -49,24 +55,6 @@ body {
     text-decoration: none;
 }
 
-.sidebar-nav > .sidebar-brand {
-    font-size: 1.2rem;
-    background: rgba(43, 139, 235, 0.9);
-    height: 80px;
-    line-height: 50px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    padding-left: 15px;
-}
-
-.sidebar-nav > .sidebar-brand a {
-    color: #274426;
-}
-
-.sidebar-nav > .sidebar-brand a:hover {
-    color: #274426;
-    background: none;
-}
 
 #sidebar-wrapper.active {
     right: 250px;
@@ -74,6 +62,9 @@ body {
     transition: all 0.4s ease 0s;
 }
 
+.imgLinkPhone {
+    width: 36px;
+}
 
 /**************************** MENU BURGER ******************************/
 .menu-toggle {
@@ -109,7 +100,6 @@ body {
     text-align: center;
     color: white;
     background: rgba(224, 177, 126, 0.7);
-
     line-height: 45px;
 }
 
@@ -119,7 +109,7 @@ body {
 
 .scroll-to-top:hover {
 
-    background: #343a40;
+    background: #E0B17EFF;
 }
 
 .scroll-to-top i {
@@ -150,7 +140,6 @@ a, a:focus, a:active, a:hover {
     text-decoration: underline #E0B17EFF;
 }
 
-
 #akashiques-medium-guidance-energeticienne-article-pourquoi li {
     margin: 10px 0px;
 }
@@ -158,7 +147,6 @@ a, a:focus, a:active, a:hover {
 #akashiques-medium-guidance-energeticienne-navDesktop1, #akashiques-medium-guidance-energeticienne-navDesktop2 {
     display: none;
 }
-
 
 main {
     background-color: #ffffff;
@@ -242,14 +230,9 @@ blockquote {
         justify-content: space-around;
     }
 
-    .logoimg {
-
-        max-height: 380px;
-    }
 }
 
 @media screen and (min-width: 768px) {
-
 
     main {
         background-image: url("../images/background-angel.jpg");
@@ -271,6 +254,21 @@ blockquote {
         display: none;
     }
 
+    header {
+        background-color: #274426;
+
+    }
+
+    #akashiques-medium-guidance-energeticienne-banner {
+
+        text-align: center;
+    }
+
+    .logoimg {
+        width: 60%;
+
+    }
+
     .sticky {
         position: fixed;
         top: 0;
@@ -282,16 +280,10 @@ blockquote {
         margin-top: 500px;
     }
 
-
-
-    #akashiques-medium-guidance-energeticienne-navDesktop1 li, #akashiques-medium-guidance-energeticienne-navDesktop2 {
-        background-color: white;
-    }
-
     #akashiques-medium-guidance-energeticienne-navDesktop ul {
         font-weight: bold;
         margin: 0px;
-        font-size: 16px;
+        font-size: 15px;
         list-style: none;
         text-transform: uppercase;
     }
@@ -305,34 +297,20 @@ blockquote {
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        background-color: white;
     }
 
-    .navLinks, #prestationNav {
-        padding: 8px;
-        width: 330px;
-        text-align: center;
-        height: 40px;
+    #akashiques-medium-guidance-energeticienne-navDesktop2 {
+        position: absolute;
         border-left: solid #E0B17EFF 2px;
+        background-color: white;
+        align-items: center;
     }
-
-    .navLinks a {
-        padding: 8px;
-    }
-
-    .navLinks a:hover, .prestationNavA:hover {
-        border-top: solid #E0B17EFF 2px;
-    }
-
-    #firstNavLinks {
-        border-left: none;
-    }
-
-
 
     #akashiques-medium-guidance-energeticienne-navDesktop2 ul {
         text-align: left;
-        padding: 15px;
-
+        padding: 5px;
+        align-items: center;
     }
 
     #akashiques-medium-guidance-energeticienne-navDesktop2 li {
@@ -340,10 +318,37 @@ blockquote {
 
     }
 
+    #akashiques-medium-guidance-energeticienne-navDesktop1 ul li, #prestationDiv {
+        flex-basis: 15%;
+    }
+
+
+    .navLinks, #prestationNav {
+        padding: 8px 0;
+        text-align: center;
+        border-left: solid #E0B17EFF 2px;
+
+    }
+
+    #contactNavLinks {
+        border-right: solid #E0B17EFF 2px;
+    }
+
+    #prestationDiv ul li a {
+        padding: 10px;
+        border-radius: 5px;
+    }
+
+    .navLinks a:hover, .prestationNavA:hover {
+        border-top: solid #E0B17EFF 2px;
+    }
+
+    #prestationDiv ul li a:hover {
+        background-color: #274426;
+    }
 
     .imgLink {
         width: 35px;
-
     }
 
     .main-container {
