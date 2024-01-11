@@ -5,7 +5,6 @@
 
 body {
     font-family: "Garamond", sans-serif;
-
 }
 
 
@@ -140,21 +139,21 @@ a, a:focus, a:active, a:hover {
     text-decoration: underline #E0B17EFF;
 }
 
-#akashiques-medium-guidance-energeticienne-article-pourquoi li {
-    margin: 10px 0px;
-}
-
 #akashiques-medium-guidance-energeticienne-navDesktop1, #akashiques-medium-guidance-energeticienne-navDesktop2 {
     display: none;
 }
 
+
+/*********** MAIN ********/
 main {
     background-color: #ffffff;
+
 }
 
 .main-container {
     padding: 10px;
     margin-bottom: 15px;
+
 }
 
 main a {
@@ -164,18 +163,46 @@ main a {
 
 main span {
     font-weight: bold;
+    color: #E0B17EFF;
+}
+
+
+.title {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    color: #274426;
+}
+
+.title h1 {
+    font-size: 21px;
+    font-weight: bolder;
+}
+
+.h1divBefore, .h1divAfter {
+    flex-basis: 20%;
+    height: 1px;
+    background: #274426;
+}
+
+h2 {
+    color: #E0B17EFF;
+    font-size: 19px;
+    font-weight: bolder;
 }
 
 .akashiques-medium-guidance-energeticienne-section {
-    box-shadow: rgba(224, 177, 126, 0.5) 0 5px 15px;
-    border-radius: 5px;
-    margin-top: 50px;
+    /* box-shadow: rgba(224, 177, 126, 0.5) 0 5px 15px;
+     border-radius: 5px;*/
+    margin-top: 30px;
 }
 
 
 .akashiques-medium-guidance-energeticienne-section article {
     padding: 10px;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 28px;
 }
 
@@ -186,6 +213,8 @@ section h2 {
 blockquote {
     text-align: center;
     font-size: 15px;
+    font-weight: bolder;
+    color: #E0B17EFF;
 }
 
 .tarifPrestation {
@@ -205,10 +234,65 @@ blockquote {
     font-weight: normal;
 }
 
+/*********************************************  POURQUOI **************************************/
+#akashiques-medium-guidance-energeticienne-article-pourquoi {
+    text-align: center;
+}
+
+#akashiques-medium-guidance-energeticienne-article-pourquoi ul {
+
+    color: #274426;
+    font-weight: bolder;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: left;
+    background-color: rgba(224, 177, 126, 0.2);
+
+}
+
+#akashiques-medium-guidance-energeticienne-article-pourquoi li {
+    padding: 5px;
+    margin: 10px 0px;
+
+}
+
+.textLeft {
+    text-align: left;
+}
+
+/******************************************** PRESTATION ********************************************/
+#akashiques-medium-guidance-energeticienne-prestation article, #akashiques-medium-guidance-energeticienne-prestation h1 {
+    margin-bottom: 40px;
+}
+
+.prestaArticleContainer {
+    background-color: rgba(224, 177, 126, 0.2);
+    padding-top: 45px;
+    padding-right: 15px;
+    padding-left: 15px;
+    border-radius: 5px;
+}
+
+.imgTitlePresta {
+    text-align: center;
+}
+
+.imgTitlePresta img {
+    position: absolute;
+    width: 100px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#akashiques-medium-guidance-energeticienne-prestation article p, #akashiques-medium-guidance-energeticienne-prestation article span {
+    color: #274426;
+}
+
 #akashiques-medium-guidance-energeticienne-contact {
     margin-bottom: 200px;
 }
 
+/************************************ FOOTER ************************/
 #akashiques-medium-guidance-energeticienne-footer {
     position: fixed;
     width: 100%;
@@ -219,15 +303,20 @@ blockquote {
 }
 
 @media screen and (min-width: 601px) {
+    .title h1 {
+        font-size: 26px;
+    }
+
+    .h1divBefore, .h1divAfter {
+        flex-basis: 24%;
+    }
 
     .akashiques-medium-guidance-energeticienne-mobilText {
         display: none;
     }
 
     #akashiques-medium-guidance-energeticienne-footer {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-around;
+        padding: 20px;
     }
 
 }
@@ -245,6 +334,12 @@ blockquote {
 
     .main-container {
         padding: 0px 120px;
+    }
+
+    #akashiques-medium-guidance-energeticienne-footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
     }
 
 }
@@ -280,10 +375,11 @@ blockquote {
         margin-top: 500px;
     }
 
+
     #akashiques-medium-guidance-energeticienne-navDesktop ul {
         font-weight: bold;
         margin: 0px;
-        font-size: 15px;
+        font-size: 16px;
         list-style: none;
         text-transform: uppercase;
     }
@@ -355,6 +451,15 @@ blockquote {
         padding: 0px 250px;
     }
 
+
+    .title h1 {
+        font-size: 27px;
+    }
+
+    .h1divBefore, .h1divAfter {
+        flex-basis: 25%;
+    }
+
 }
 
 @media screen and (min-width: 1500px) {
@@ -363,4 +468,13 @@ blockquote {
         padding: 0px 350px;
     }
 
+    .title h1 {
+        font-size: 30px;
+    }
+
+    .h1divBefore, .h1divAfter {
+        flex-basis: 30%;
+    }
 }
+
+/*E1B17E*/

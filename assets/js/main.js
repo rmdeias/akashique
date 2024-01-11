@@ -33,7 +33,7 @@ $(document).ready(function () {
     $('#akashiques-medium-guidance-energeticienne-navDesktop li').click(function () {
         console.log($(this).children().attr('href'))
         var link = $(this).children().attr('href')
-        $('html,body').animate({scrollTop: $(link).offset().top - 150}, 'slow');
+        $('html,body').animate({scrollTop: $(link).offset().top - 80}, 'slow');
     });
 })
 
