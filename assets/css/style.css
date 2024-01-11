@@ -166,7 +166,7 @@ main span {
     color: #E0B17EFF;
 }
 
-
+/************ Title ***********/
 .title {
     display: flex;
     flex-direction: row;
@@ -189,6 +189,14 @@ main span {
 
 h2 {
     color: #E0B17EFF;
+    text-align: center;
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+h3 {
+    color: #274426;
+    text-align: center;
     font-size: 19px;
     font-weight: bolder;
 }
@@ -284,7 +292,7 @@ blockquote {
     transform: translate(-50%, -50%);
 }
 
-#akashiques-medium-guidance-energeticienne-prestation article p, #akashiques-medium-guidance-energeticienne-prestation article span {
+#akashiques-medium-guidance-energeticienne-prestation article p {
     color: #274426;
 }
 
