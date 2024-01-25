@@ -30,10 +30,18 @@ function scrollFunction() {
 
 //fix anchoring offset with nav
 $(document).ready(function () {
+
+
     $('#akashiques-medium-guidance-energeticienne-navDesktop li').click(function () {
-        console.log($(this).children().attr('href'))
+
         var link = $(this).children().attr('href')
-        $('html,body').animate({scrollTop: $(link).offset().top - 80}, 'slow');
+        if (!$('#akashiques-medium-guidance-energeticienne-navDesktop1').hasClass("sticky")) {
+
+            $('html,body').animate({scrollTop: $(link).offset().top + 50}, 'slow');
+        } else {
+            $('html,body').animate({scrollTop: $(link).offset().top - 70}, 'slow');
+        }
+
     });
 
 

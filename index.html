@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<head id="head">
+<head id="accueil">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
@@ -18,14 +18,14 @@
     <title>Title</title>
 </head>
 <body>
-<a class="menu-toggle rounded" href="#">
+<a class="menu-toggle rounded" href="#accueil">
     <i class="fas fa-bars"></i>
 </a>
 
 <nav id="sidebar-wrapper">
     <ul class="sidebar-nav">
         <li class="sidebar-nav-item">
-            <a class="js-scroll-trigger" href="#">Accueil</a>
+            <a class="js-scroll-trigger" href="#accueil">Accueil</a>
         </li>
 
         <li class="sidebar-nav-item">
@@ -98,8 +98,9 @@
             <a href="#akashiques-medium-guidance-energeticienne-header">
                 <picture>
                     <source media="(max-width: 600px)" width="100%" srcset="./assets/images/header-phone.jpg">
-                    <source media="(min-width: 601px)" width="100%" srcset="./assets/images/header.jpg">
-                    <img class="logoimg" src="./assets/images/header.jpg">
+                    <source media="(max-width: 1024px)" width="100%" srcset="./assets/images/header-tablet.jpg">
+                    <source media="(min-width: 1025px)" width="100%" srcset="./assets/images/header-desktop.jpg">
+                    <img class="logoimg" src="./assets/images/header-desktop.jpg">
                 </picture>
             </a>
         </div>
@@ -112,7 +113,7 @@
         <div id="akashiques-medium-guidance-energeticienne-navDesktop">
             <nav id="akashiques-medium-guidance-energeticienne-navDesktop1">
                 <ul class="firstNavUl">
-                    <li class="navLinks homeLink"><a href="#">Accueil</a></li>
+                    <li class="navLinks homeLink"><a href="#accueil">Accueil</a></li>
                     <li class="navLinks"><a href="#qui-suis-je">Qui suis-je</a></li>
                     <li class="navLinks"><a href="#les-memoires-akashiques">Les
                         Mémoires Akashiques</a></li>
@@ -699,7 +700,7 @@
     </form>
 </footer>
 
-<a class="scroll-to-top rounded js-scroll-trigger" href="#head">
+<a class="scroll-to-top rounded js-scroll-trigger" href="#accueil">
     <i class="fas fa-angle-up"></i>
 </a>
 <script>
