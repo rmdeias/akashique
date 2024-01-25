@@ -130,11 +130,14 @@ a, a:focus, a:active, a:hover {
 
 .akashiques-medium-guidance-energeticienne-mobilText, #akashiques-medium-guidance-energeticienne-footer {
     background-color: #274426;
-    text-align: center;
     color: #E0B17EFF;
     font-weight: bold;
     padding: 5px;
 
+}
+
+.akashiques-medium-guidance-energeticienne-mobilText {
+    text-align: center;
 }
 
 .akashiques-medium-guidance-energeticienne-mobilText h1, .akashiques-medium-guidance-energeticienne-mobilText h2 {
@@ -218,7 +221,7 @@ h3 {
 .akashiques-medium-guidance-energeticienne-section {
     /* box-shadow: rgba(224, 177, 126, 0.5) 0 5px 15px;
      border-radius: 5px;*/
-    margin-top: 30px;
+    margin-top: 40px;
 }
 
 
@@ -290,8 +293,8 @@ article ul {
 }
 
 /******************************************** PRESTATION ********************************************/
-#mes-prestations article, #mes-prestations h1 {
-    margin-bottom: 40px;
+#mes-prestations article {
+    margin-top: 50px;
 }
 
 .prestaArticleContainer {
@@ -379,12 +382,10 @@ article ul {
     }
 
 
-
     #akashiques-medium-guidance-energeticienne-banner {
 
         text-align: center;
     }
-
 
 
     .sticky {
@@ -526,6 +527,12 @@ article ul {
         justify-content: space-between;
 
 
+    }
+}
+
+@media screen and (min-width: 1700px) {
+    #mes-prestations article {
+        padding: 0 200px;
     }
 }
 

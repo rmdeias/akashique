@@ -39,7 +39,7 @@ $(document).ready(function () {
 
             $('html,body').animate({scrollTop: $(link).offset().top + 50}, 'slow');
         } else {
-            $('html,body').animate({scrollTop: $(link).offset().top - 70}, 'slow');
+            $('html,body').animate({scrollTop: $(link).offset().top - 50}, 'slow');
         }
 
     });
