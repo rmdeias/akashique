@@ -176,6 +176,7 @@ main span {
 nav {
     font-family: "Garamond", sans-serif;
 }
+
 /************ Title ***********/
 .title {
     display: flex;
@@ -238,6 +239,10 @@ blockquote {
     color: #E0B17EFF;
 }
 
+article ul {
+    list-style: circle;
+}
+
 .tarifPrestation {
 
     font-weight: bold;
@@ -267,9 +272,11 @@ blockquote {
     border-radius: 5px;
     display: inline-block;
     text-align: left;
+    list-style-type: circle;
     background-color: rgba(224, 177, 126, 0.2);
 
 }
+
 
 #akashiques-medium-guidance-energeticienne-article-pourquoi li {
     padding: 5px;
@@ -283,7 +290,7 @@ blockquote {
 }
 
 /******************************************** PRESTATION ********************************************/
-#akashiques-medium-guidance-energeticienne-prestation article, #akashiques-medium-guidance-energeticienne-prestation h1 {
+#mes-prestations article, #mes-prestations h1 {
     margin-bottom: 40px;
 }
 
@@ -306,11 +313,11 @@ blockquote {
     transform: translate(-50%, -50%);
 }
 
-#akashiques-medium-guidance-energeticienne-prestation article p {
+#mes-prestations article p {
     color: #274426;
 }
 
-#akashiques-medium-guidance-energeticienne-contact {
+#contact {
     margin-bottom: 200px;
 }
 
@@ -404,10 +411,12 @@ blockquote {
         font-size: 16px;
         list-style: none;
         text-transform: uppercase;
+        padding: 10px 0;
     }
 
     #akashiques-medium-guidance-energeticienne-navDesktop1 {
         display: block;
+        z-index: 1;
     }
 
     .firstNavUl {
@@ -438,11 +447,12 @@ blockquote {
 
     #akashiques-medium-guidance-energeticienne-navDesktop1 ul li, #prestationDiv {
         flex-basis: 15%;
+        min-width: max-content;
     }
 
 
     .navLinks, #prestationNav {
-        padding: 8px 0;
+        padding: 8px;
         text-align: center;
         border-left: solid #E0B17EFF 2px;
 
@@ -461,9 +471,10 @@ blockquote {
         border-top: solid #E0B17EFF 2px;
     }
 
-    #prestationNav  .fa-chevron-down {
+    #prestationNav .fa-chevron-down {
         margin-left: 5px;
     }
+
     #prestationDiv ul li a:hover {
         background-color: #274426;
     }
@@ -491,13 +502,15 @@ blockquote {
 @media screen and (min-width: 1500px) {
 
     .main-container {
-        padding: 0px 350px;
+        padding: 0px 400px;
         font-size: 20px;
 
     }
+
     .akashiques-medium-guidance-energeticienne-section article {
         font-size: 20px;
     }
+
     .title h1 {
         font-size: 32px;
     }
@@ -506,7 +519,7 @@ blockquote {
         font-size: 26px;
     }
 
-    h3{
+    h3 {
         font-size: 22px;
     }
 
@@ -516,6 +529,8 @@ blockquote {
 
     .bienfaitsUl {
         display: flex;
+        justify-content: space-between;
+
 
     }
 }
