@@ -35,12 +35,11 @@ $(document).ready(function () {
     $('#akashiques-medium-guidance-energeticienne-navDesktop li').click(function () {
 
         var link = $(this).children().attr('href')
-        if (!$('#akashiques-medium-guidance-energeticienne-navDesktop1').hasClass("sticky")) {
-
-            $('html,body').animate({scrollTop: $(link).offset().top + 50}, 'slow');
-        } else {
+       // if (!$('#akashiques-medium-guidance-energeticienne-navDesktop1').hasClass("sticky")) {
+           // $('html,body').animate({scrollTop: $(link).offset().top + -50}, 'slow');
+        //} else {
             $('html,body').animate({scrollTop: $(link).offset().top - 50}, 'slow');
-        }
+        //}
 
     });
 
