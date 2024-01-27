@@ -519,7 +519,7 @@ input[type=email] {
     .portraitContainer {
         margin: 10px;
         width: 25%;
-        float: left;
+        float: right;
     }
 
     .portrait {
