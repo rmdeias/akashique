@@ -493,6 +493,10 @@ input[type=email] {
         margin-top: -10px
     }
 
+    main {
+        background-position: center top 360px;
+    }
+
     .marginTopMain {
         margin-top: 350px;
     }
