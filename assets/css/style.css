@@ -451,11 +451,11 @@ input[type=email] {
         background-size: contain;
         background-repeat: no-repeat;
         background-attachment: fixed;
-        background-position: center top 150px;
+        background-position: center top 255px;
     }
 
     .main-container {
-        padding: 0px 120px;
+        padding: 0px 165px;
     }
 
     .title h1, #contact h1 {
