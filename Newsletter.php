@@ -1,4 +1,5 @@
 <?php
+
 //include("index.html");
 if (isset($_POST["email"])  && isset($_POST["email"]) && filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
     $_POST["email"] = htmlspecialchars($_POST["email"]);
@@ -16,10 +17,10 @@ if (isset($_POST["email"])  && isset($_POST["email"]) && filter_var($_POST["emai
 
     // Email configuration
     $today = date("Ymd");
-    $to = 'rmdeias@gmail.com';
+    $to = 'contact@naistoitoname.fr';
     $subject = 'Nouveaux emails pour la Newsletter';
     $message = 'Hello voici les nouveaux mails pour la newsletter. Tu peux ouvrir le fichier avec bloc note ou excel et copier/coller les mails directement dans les destinataires de ta newsletter';
-    $from = 'rmdeias@gmail.com';
+    $from = 'contact@naistoitoname.fr';
 
     // Headers for attachment
     $headers = "From: $from\r\n";
@@ -45,10 +46,11 @@ if (isset($_POST["email"])  && isset($_POST["email"]) && filter_var($_POST["emai
 
     mail($to, $subject, $body, $headers);
     // Send email with attachment
+
    /* if (mail($to, $subject, $message, $headers)) {
         echo "<p>Email sent successfully with the CSV file attachment.</p>";
     } else {
-        echo "<p>Failed to send email.</p>";
+        echo("Failed to send email");
     }*/
-    header('Location: /akashique');
+    header('Location: /');
 }
