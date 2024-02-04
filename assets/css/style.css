@@ -166,6 +166,9 @@ h2, li::marker, blockquote, a, a:focus, a:active, a:hover, main span, .akashique
 }
 
 /******** GREEN COLOR ******/
+body {
+    max-height: 3000px;
+}
 body, .ernesto, #contact a {
     color: #2A4929;
 }
@@ -448,10 +451,11 @@ input[type=email] {
 @media screen and (min-width: 768px) {
     main {
         background-image: url("../images/background-angel.jpg");
-        background-size: contain;
+        background-size: contain !important;
         background-repeat: no-repeat;
-        background-attachment: fixed;
+        background-attachment: fixed !important;
         background-position: center top 255px;
+
     }
 
     .main-container {
