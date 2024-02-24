@@ -156,7 +156,7 @@ h3 {
 }
 
 /***** ITALIC  ****/
-.title h1, #akashiques-medium-guidance-energeticienne-home h2, h3, .conseil, .paiement {
+.title h1, #akashiques-medium-guidance-energeticienne-home h2, h3, .conseil, .paiement, .h2Naistoitoname {
     font-style: italic;
 }
 
@@ -169,6 +169,7 @@ h2, li::marker, blockquote, a, a:focus, a:active, a:hover, main span, .akashique
 body {
     max-height: 3000px;
 }
+
 body, .ernesto, #contact a {
     color: #2A4929;
 }
@@ -279,7 +280,7 @@ nav {
     text-align: center;
 }
 
-#akashiques-medium-guidance-energeticienne-home h2 {
+#akashiques-medium-guidance-energeticienne-home h2, .h2Naistoitoname {
     font-family: "Garamond", sans-serif;
     font-size: 20px;
     margin-bottom: 30px;
@@ -471,7 +472,7 @@ input[type=email] {
         font-size: 26px;
     }
 
-    #akashiques-medium-guidance-energeticienne-home h2 {
+    #akashiques-medium-guidance-energeticienne-home h2, .h2Naistoitoname {
         font-size: 24px;
     }
 
@@ -572,6 +573,10 @@ input[type=email] {
 
     .portrait {
         width: 100%;
+    }
+
+    #qui-suis-je .h2Naistoitoname {
+        text-align: left;
     }
 
     /******************** PRESTATION *************************/
