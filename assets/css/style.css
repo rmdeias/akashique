@@ -221,22 +221,33 @@ blockquote {
 
 }
 
-#mesAteliersBanner a{
+#mesAteliersBanner a {
     color: #274426;
 }
 
-#mesAteliersBanner a:hover{
+#mesAteliersBanner a:hover {
     text-decoration: underline #274426;
 }
 
 /****** PAGE ATELIER *****/
+.atelierCalendar {
+    background-color: #274426;
+    color: #E0B17EFF;
+    border-radius: 15px;
+    box-shadow: rgb(204, 219, 232) 3px 3px 6px 0px inset, rgba(255, 255, 255, 0.5) -3px -3px 6px 1px inset;
+    text-align: center;
+    margin: 15px auto;
+    padding: 5px;
+}
+
 #ateliers, #tarifAtelier {
     background-color: rgba(224, 177, 126, 0.2);
     padding: 10px;
     border-radius: 5px;
     margin-bottom: 15px;
 }
-#ateliers p {
+
+#ateliers p, .atelierCalendar p {
     margin: 0;
 }
 
@@ -317,7 +328,7 @@ nav {
     margin-bottom: 30px;
 }
 
-#akashiques-medium-guidance-energeticienne-article-pourquoi ul{
+#akashiques-medium-guidance-energeticienne-article-pourquoi ul {
     border-radius: 5px;
     display: inline-block;
     text-align: left;
@@ -482,6 +493,10 @@ input[type=email] {
 }
 
 @media screen and (min-width: 768px) {
+    .atelierCalendar {
+        width: 60%;
+    }
+
     main {
         background-image: url("../images/naistoitoname-background-angel.jpg");
         background-size: contain !important;
