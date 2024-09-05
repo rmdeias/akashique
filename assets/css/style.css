@@ -209,6 +209,37 @@ blockquote {
     display: none;
 }
 
+#mesAteliersBanner {
+
+    background-color: #E0B17EFF;
+    padding: 5px;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    color: #274426;
+
+}
+
+#mesAteliersBanner a{
+    color: #274426;
+}
+
+#mesAteliersBanner a:hover{
+    text-decoration: underline #274426;
+}
+
+/****** PAGE ATELIER *****/
+#ateliers, #tarifAtelier {
+    background-color: rgba(224, 177, 126, 0.2);
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+#ateliers p {
+    margin: 0;
+}
+
 /*********** MAIN ********/
 main {
     background-color: #ffffff;
@@ -286,7 +317,7 @@ nav {
     margin-bottom: 30px;
 }
 
-#akashiques-medium-guidance-energeticienne-article-pourquoi ul {
+#akashiques-medium-guidance-energeticienne-article-pourquoi ul{
     border-radius: 5px;
     display: inline-block;
     text-align: left;
@@ -302,6 +333,7 @@ nav {
     text-align: left;
     padding: 10px;
 }
+
 
 /******************************************** PRESTATION ********************************************/
 #mes-prestations article {
